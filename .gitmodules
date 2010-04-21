@@ -1,3 +1,6 @@
 [submodule "vendor/gems/amazon-ec2"]
 	path = vendor/gems/amazon-ec2
 	url = git://github.com/grempe/amazon-ec2.git
+[submodule "vendor/gems/git-style-binaries"]
+	path = vendor/gems/git-style-binaries
+	url = git://github.com/jashmenn/git-style-binaries.git
