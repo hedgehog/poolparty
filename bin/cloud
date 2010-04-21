@@ -16,6 +16,7 @@ The cloud subcommands commands are:
   \#{GitStyleBinary.pretty_known_subcommands(:short).join("  ")}
 
 See 'cloud help COMMAND' for more information on a specific command.
+  \#{GitStyleBinary.pretty_known_subcommands(:short).join("  ").gsub(/cloud-/,'')}
 EOS
     
   opt :clouds_dot_rb, "Set the clouds.rb file", :type => String, :default => "clouds.rb"
