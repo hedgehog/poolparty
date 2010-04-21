@@ -153,7 +153,7 @@ module CloudProviders
           # used to do nothing
         end
       end
-      unless $?.success?
+      if $? and not $?.success?
         warn "Failed sshing. Check ~/.poolparty/ssh.log for details"
       end
       buf
