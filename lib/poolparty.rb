@@ -20,7 +20,7 @@ module PoolParty
     return @version if @version
     config = YAML.load(File.read(File.expand_path("#{File.dirname(__FILE__)}/../VERSION.yml")))
     @version = "#{config[:major]}.#{config[:minor]}.#{config[:patch]}"
-    @version += "-" + config[:build] if  config[:build]
+    config[:build] ? @version += "-" + config[:build] : @version
   end
   def self.lib_dir
   File.join(File.dirname(__FILE__), "..")
